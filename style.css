@@ -1,0 +1,107 @@
+body{
+  background-color: #e4f3f8;
+}
+a{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 23px;
+  color: black;
+	overflow: hidden;
+	z-index: 1000;
+  text-decoration: none;
+  position: relative;
+}
+.portfolio{
+  margin-left: 26%;
+}
+.portfolio:hover{
+  color: white;
+}
+.projects{
+  margin-left: 76%;
+}
+.projects:hover{
+  color: white;
+}
+
+.logo{
+  z-index: -30;
+}
+.flex{
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: absolute;
+  width: 80%;
+  margin-top: 300px;
+  line-height: 50px;
+}
+.fill{
+  position: absolute;
+  margin-left: 25%;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+	background-size: 150% 150%;
+	height: 50px;
+	width: 230px;
+	border-radius: 5px;
+	z-index: -10;
+}
+.fill2{
+  position: absolute;
+  margin-left: 75%;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+	background-size: 150% 150%;
+	height: 50px;
+	width: 200px;
+	border-radius: 5px;
+	z-index: -10;
+}
+
+.container-one:hover .fill{
+	-webkit-animation: gradient 3s ease infinite;
+	-moz-animation: gradient 3s ease infinite;
+	animation: gradient 3s ease infinite;
+}
+.container-two:hover .fill2{
+	-webkit-animation: gradient 3s ease infinite;
+	-moz-animation: gradient 3s ease infinite;
+	animation: gradient 3s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

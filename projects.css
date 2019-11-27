@@ -1,0 +1,158 @@
+img{
+  width: 270px;
+  height: 270px;
+  position: relative;
+  margin-top: 130px;
+  margin-left: 250px;
+  margin-right: 0;
+  object-fit: cover;
+  box-shadow: -15px 15px 0px rgba(0, 0, 40, 0.3);
+}
+body{
+  background: #e4f3f8;
+  font-family: 'Press Start 2P', cursive;
+}
+div{
+  float: right;
+  width: 600px;
+  margin-top: 100px;
+  margin-right: 190px;
+}
+h1{
+  color: black;
+  font-size: 40px;
+  margin-top: 50px;
+  text-shadow: -3px 3px 0px rgba(230, 0, 40, 0.7);
+}
+h2{
+  margin-top: -30px;
+  font-family: 'Allerta', sans-serif;
+  font-size: 30px;
+  color: #009eba;
+}
+p{
+  font-family: 'Allerta', sans-serif;
+  font-size: 20px;
+}
+
+
+a{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 23px;
+  color: black;
+	overflow: hidden;
+	z-index: 1000;
+  text-decoration: none;
+  position: relative;
+}
+a:hover{
+  color: #d12858;
+}
+.namelogo{
+  position: absolute;
+  height: 300px;
+  margin-top: 100px;
+  margin-left: 250px;
+}
+
+.aboutme{
+  margin-top: 115px;
+  margin-left: 205px;
+  position: absolute;
+  transform: rotate(-90deg);
+  position: fixed;
+}
+.aboutme:hover{
+  color: white;
+}
+.portfolio{
+  margin-top: 360px;
+  margin-left: 193px;
+  position: absolute;
+  transform: rotate(-90deg);
+  position: fixed;
+}
+.portfolio:hover{
+  color: white;
+}
+
+
+/* .flex{
+  justify-content: flex-end;
+  display: flex;
+} */
+
+.container {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: -200px;
+  position: fixed;
+}
+.fill{
+  position: relative;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+  transform: rotate(-90deg);
+	background-size: 150% 150%;
+	height: 50px;
+	width: 230px;
+	border-radius: 5px;
+	z-index: -10
+}
+.fill2{
+  position: relative;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+  transform: rotate(-90deg);
+	background-size: 150% 150%;
+	height: 50px;
+	width: 230px;
+	border-radius: 5px;
+	z-index: -10;
+  margin-top: 350px;
+}
+
+.container-one:hover .fill{
+	-webkit-animation: gradient 1.5s ease infinite;
+	-moz-animation: gradient 1.5s ease infinite;
+	animation: gradient 1.5s ease infinite;
+}
+.container-two:hover .fill2{
+	-webkit-animation: gradient 1.5s ease infinite;
+	-moz-animation: gradient 1.5s ease infinite;
+	animation: gradient 1.5s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

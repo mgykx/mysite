@@ -78,7 +78,7 @@ h1 {
 	height: 200px;
 	position: relative;
 	padding: 10px;
-  background-image: linear-gradient(to bottom right, #d12858 , #ffd376 );
+  background-image: linear-gradient(to bottom right, #009eba , #9eaeba );
 	box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.8);
 	border-radius: 4px;
 }
@@ -214,4 +214,121 @@ h1 {
 @keyframes fadeOutScale {
   0% { transform: scale(1); opacity: 1; }
   100% { transform: scale(0.3); opacity: 0; }
+}
+
+
+
+a{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 23px;
+  color: black;
+	overflow: hidden;
+  text-decoration: none;
+  position: relative;
+}
+.aboutme{
+  margin-top: -35px;
+  margin-left: 25px;
+  position: absolute;
+  transform: rotate(-90deg);
+  position: fixed;
+}
+.aboutme:hover{
+  color: white;
+}
+.projects{
+  margin-top: -35px;
+  margin-left: 23px;
+  position: absolute;
+  transform: rotate(-90deg);
+  position: fixed;
+}
+.projects:hover{
+  color: white;
+}
+
+.logo{
+  z-index: -30;
+  height: 600px;
+  margin-top: 70px;
+  margin-left: 350px;
+}
+.flex{
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 0px;
+  position: fixed;
+}
+.fill{
+  position: relative;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+  transform: rotate(-90deg);
+	background-size: 150% 150%;
+	height: 50px;
+	width: 230px;
+	border-radius: 5px;
+	z-index: -10
+}
+.fill2{
+  position: relative;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+  transform: rotate(-90deg);
+	background-size: 150% 150%;
+	height: 50px;
+	width: 230px;
+	border-radius: 5px;
+	z-index: -10;
+  margin-top: 280px;
+}
+
+.container-one:hover .fill{
+	-webkit-animation: gradient 1.5s ease infinite;
+	-moz-animation: gradient 1.5s ease infinite;
+	animation: gradient 1.5s ease infinite;
+}
+.container-two:hover .fill2{
+	-webkit-animation: gradient 1.5s ease infinite;
+	-moz-animation: gradient 1.5s ease infinite;
+	animation: gradient 1.5s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

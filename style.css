@@ -1,6 +1,35 @@
 body{
   background-color: #e4f3f8;
 }
+
+.arrow1{
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  left: 3%;
+}
+.arrow2{
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  right: 3%;
+}
+
+.aboutheader{
+  width: 90%;
+  margin-left: 6%;
+  margin-top: 100px;
+}
+.about1, .about2, .about3{
+  width: 70%;
+  margin: 15%;
+}
+.aboutpg{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
 a{
   font-family: 'Press Start 2P', cursive;
   font-size: 23px;

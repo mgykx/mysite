@@ -3,10 +3,33 @@ img{
   height: 270px;
   position: relative;
   margin-top: 130px;
-  margin-left: 250px;
+  margin-left: 220px;
   margin-right: 0;
   object-fit: cover;
-  box-shadow: -15px 15px 0px rgba(0, 0, 40, 0.3);
+  /* box-shadow: -15px 15px 0px rgba(0, 0, 40, 0.3); */
+  animation: shake 4s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  animation-iteration-count:infinite;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(3px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(5px, 0, 0);
+  }
 }
 body{
   background: #e4f3f8;

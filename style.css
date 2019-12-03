@@ -100,7 +100,7 @@ a{
 }
 .portfolio{
   margin-left: 32%;
-  margin-top: -265px;
+  margin-top: -50px;
   position: absolute;
 }
 .portfolio:hover{
@@ -135,7 +135,6 @@ a{
 }
 .fill{
   position: relative;
-  margin-bottom: 20%;
   margin-left: 31%;
 	background-image: linear-gradient(to right, #d12858 , #ffd376 );
 	background-size: 150% 150%;

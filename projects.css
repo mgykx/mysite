@@ -3,8 +3,8 @@
   height: 270px;
   position: relative;
   margin-top: 130px;
-  margin-left: 220px;
-  margin-right: 0;
+  margin-left: 280px;
+  margin-right: 50px;
   object-fit: cover;
   /* box-shadow: -15px 15px 0px rgba(0, 0, 40, 0.3); */
   animation: shake 4s cubic-bezier(.36,.07,.19,.97) both;
@@ -12,9 +12,6 @@
   animation-iteration-count:infinite;
   backface-visibility: hidden;
   perspective: 1000px;
-}
-.divs{
-
 }
 
 @keyframes shake {
@@ -66,6 +63,25 @@ div{
   margin-top: 100px;
   margin-right: 190px;
 }
+
+.pp{
+  float: none;
+  display: flex;
+  flex-direction: row;
+  width: 1350px;
+  margin-left: -560px;
+}
+.divs{
+  float: none;
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  margin-left: -900px;
+}
+
 h1{
   color: black;
   font-size: 40px;

@@ -1,4 +1,4 @@
-img{
+.pic{
   width: 270px;
   height: 270px;
   position: relative;
@@ -12,6 +12,9 @@ img{
   animation-iteration-count:infinite;
   backface-visibility: hidden;
   perspective: 1000px;
+}
+.divs{
+
 }
 
 @keyframes shake {
@@ -35,6 +38,28 @@ body{
   background: #e4f3f8;
   font-family: 'Press Start 2P', cursive;
 }
+
+
+.social1, .social2{
+  height: 70px;
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
+.social1{
+  border-radius: 10%;
+}
+.social2{
+  margin-left: 90px;
+}
+.social1:hover, .social2:hover{
+  height: 80px;
+  top: 25px;
+  left: 45px;
+}
+
+
+
 div{
   float: right;
   width: 600px;
@@ -107,7 +132,7 @@ a:hover{
 
 .container {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-left: -200px;
   position: fixed;
 }

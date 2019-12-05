@@ -2,7 +2,7 @@
   width: 270px;
   height: 270px;
   position: relative;
-  margin-top: 130px;
+  margin-top: 100px;
   margin-left: 20%;
   margin-right: 50px;
   object-fit: cover;
@@ -86,7 +86,7 @@ div{
 h1{
   color: black;
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: 0px;
   text-shadow: -3px 3px 0px rgba(230, 0, 40, 0.7);
 }
 h2{

@@ -85,8 +85,9 @@ h1 {
 } */
 
 .lb-album{
-	width: 900px;
+	width: 800px;
 	margin: 0 auto;
+  margin-left: 23%;
 }
 .lb-album li{
 	float: left;
@@ -102,7 +103,7 @@ h1 {
 	height: 200px;
 	position: relative;
 	padding: 10px;
-  margin: 50px;
+  margin: 30px;
   background-image: linear-gradient(to bottom right, #009eba , #9eaeba );
 	box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.8);
 	border-radius: 4px;
@@ -286,7 +287,7 @@ a{
 }
 .container {
   position: absolute;
-  margin-top: 300px;
+  margin-top: 250px;
   margin-left: -10px;
   position: fixed;
 }

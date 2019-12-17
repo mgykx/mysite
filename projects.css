@@ -58,28 +58,19 @@ body{
 
 
 div{
-  float: right;
-  width: 600px;
   margin-top: 100px;
-  margin-right: 190px;
 }
 
 .pp{
-  float: none;
   display: flex;
   flex-direction: row;
-  width: 1350px;
-  margin-left: -560px;
 }
-.divs{
-  float: none;
-  display: flex;
-  flex-direction: column;
-}
+
 .content{
   display: flex;
   flex-direction: column;
-  margin-top: 2%;
+  width: 100%;
+  margin-top: auto;
   margin-bottom: 200px;
 }
 
@@ -98,6 +89,7 @@ h2{
 p{
   font-family: 'Allerta', sans-serif;
   font-size: 20px;
+  margin-right: 100px;
 }
 
 
@@ -112,12 +104,6 @@ a{
 }
 a:hover{
   color: #d12858;
-}
-.namelogo{
-  position: absolute;
-  height: 300px;
-  margin-top: 100px;
-  margin-left: 250px;
 }
 
 .aboutme{
@@ -148,23 +134,23 @@ a:hover{
 } */
 
 .container {
-  position: absolute;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: -200px;
   position: fixed;
 }
 .fill{
-  position: relative;
+  position: fixed;
 	background-image: linear-gradient(to right, #d12858 , #ffd376 );
   transform: rotate(-90deg);
 	background-size: 150% 150%;
 	height: 50px;
 	width: 230px;
 	border-radius: 5px;
-	z-index: -10
+	z-index: -10;
+  margin-left: 180px;
 }
 .fill2{
-  position: relative;
+  position: fixed;
 	background-image: linear-gradient(to right, #d12858 , #ffd376 );
   transform: rotate(-90deg);
 	background-size: 150% 150%;
@@ -173,6 +159,7 @@ a:hover{
 	border-radius: 5px;
 	z-index: -10;
   margin-top: 350px;
+  margin-left: 180px;
 }
 
 .container-one:hover .fill{

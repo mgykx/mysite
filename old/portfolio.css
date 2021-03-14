@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body {
+  height:100%;
+  max-height:100%;
+}
+
+body {
+  background: #e4f3f8;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Allerta', sans-serif;
+  text-decoration: none;
+}
+
+
+.social1, .social2{
+  height: 70px;
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
+.social1{
+  border-radius: 10%;
+}
+.social2{
+  margin-left: 90px;
+}
+.social1:hover, .social2:hover{
+  height: 80px;
+  top: 25px;
+  left: 45px;
+}
+
+
+
+h1 {
+  font-weight:200;
+  font-size:40px;
+  padding:50px 0;
+  text-align:center;
+  color:#ffd376 ;
+  text-shadow:2px 2px 0px rgba(0,0,0,.15);
+}
+.block{
+  height: 100px;
+  position: absolute;
+}
+
+.desc{
+    animation: fadeInScale 400ms ease-in-out;
+    font-family: 'Allerta', sans-serif;
+    background-color: black;
+    height: 80px;
+    width: 300px;
+}
+/*
+.gallery {
+	margin:80px
+}
+
+.gallery > div {
+    float:left;
+    width:31.833333%;
+	padding: .5%
+}
+
+.gallery > div img {
+    width:95%;
+    margin:2px;
+    padding:4px;
+    background-color:#FFF;
+    border:1px solid #CCC;
+    box-shadow:10px 10px 0px rgba(256, 256, 256, 0.30);
+	transition: transform 300ms ease-in-out;
+	cursor: pointer
+}
+
+.gallery > div img:hover {
+  transform: scale3d(1.5, 1.5, 3);
+  box-shadow: none;
+} */
+
+.lb-album{
+	width: 800px;
+	margin: 0 auto;
+  margin-left: 23%;
+}
+.lb-album li{
+	float: left;
+	position: relative;
+  list-style-type: none;
+}
+.lb-album li > a,
+.lb-album li > a img{
+	display: block;
+}
+.lb-album li > a{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	padding: 10px;
+  margin: 30px;
+  background-image: linear-gradient(to bottom right, #009eba , #9eaeba );
+	box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.8);
+	border-radius: 4px;
+}
+.lb-album li > a:hover{
+  background-image: linear-gradient(to bottom right, #ffd376 , #ffd376 );
+}
+
+.lb-album li > a span{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+  margin-left: 10px;
+	text-align: center;
+	line-height: 100px;
+	color: black;
+  /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
+	font-size: 20px;
+	opacity: 0;
+	background:
+		radial-gradient(
+			center,
+			ellipse cover,
+			rgba(255,255,255,0.56) 0%,
+			rgba(241,210,194,1) 100%
+		);
+	transition: opacity 0.3s linear;
+}
+.lb-album li > a:hover span{
+	opacity: 1;
+}
+
+.lb-overlay{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	z-index: 99;
+	text-align: center;
+}
+
+.lb-overlay > div{
+	position: relative;
+	color: white;
+	width: 700px;
+	height: 120px;
+	margin: 20px auto 0px auto;
+}
+.lb-overlay div h3,
+.lb-overlay div p{
+	padding: 20px 20px;
+	width: 200px;
+	height: 60px;
+}
+.lb-overlay div h3{
+	font-size: 18px;
+	float: left;
+	text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  margin-top:10px;
+}
+.lb-overlay div h3 span,
+.lb-overlay div p{
+	font-size: 17px;
+  text-align: right;
+  font-family: 'Allerta', sans-serif;
+	font-style: italic;
+}
+.lb-overlay div h3 span{
+	display: block;
+	line-height: 30px;
+}
+.lb-overlay div p{
+	font-size: 14px;
+	text-align: left;
+	float: left;
+	width: 500px;
+  height: auto;
+}
+
+.lb-overlay a.lb-close{
+	background: rgba(0, 0, 0, 0.5);
+  font-family: monospace;
+	z-index: 1001;
+	color: #fff;
+	position: absolute;
+  text-decoration: none;
+	top: 5%;
+	left: 85%;
+	line-height: 70px;
+	text-align: center;
+  font-size: 100px;
+	width: 100px;
+	height: 90px;
+	overflow: hidden;
+	opacity: 0;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+.lb-overlay img{
+	max-height: 85%;
+	position: relative;
+	opacity: 0;
+	box-shadow: 15px 15px 3px rgba(0,0,0,0.5);
+	transition: opacity 200ms linear;
+  border:5px solid white;
+}
+
+
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding: 80px 100px 120px 100px;
+
+}
+
+.lb-overlay:target img,
+.lb-overlay:target a.lb-close{
+	opacity: 1;
+}
+
+.lb-overlay:target img {
+	animation: fadeInScale 400ms ease-in-out;
+}
+@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes fadeOutScale {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.3); opacity: 0; }
+}
+
+
+
+a{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 23px;
+  color: black;
+	overflow: hidden;
+  text-decoration: none;
+  position: relative;
+}
+.aboutme{
+  margin-top: -35px;
+  margin-left: 25px;
+  position: absolute;
+  transform: rotate(-90deg);
+  position: fixed;
+}
+.aboutme:hover{
+  color: white;
+}
+.projects{
+  margin-top: -35px;
+  margin-left: 23px;
+  position: absolute;
+  transform: rotate(-90deg);
+  position: fixed;
+}
+.projects:hover{
+  color: white;
+}
+
+.logo{
+  z-index: -30;
+  height: 600px;
+  margin-top: 70px;
+  margin-left: 350px;
+}
+.flex{
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: -10px;
+  position: fixed;
+}
+.fill{
+  position: relative;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+  transform: rotate(-90deg);
+	background-size: 150% 150%;
+	height: 50px;
+	width: 230px;
+	border-radius: 5px;
+	z-index: -10;
+  margin-top: 10px;
+}
+.fill2{
+  position: relative;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+  transform: rotate(-90deg);
+	background-size: 150% 150%;
+	height: 50px;
+	width: 230px;
+	border-radius: 5px;
+	z-index: -10;
+  margin-top: 260px;
+}
+
+.container-one:hover .fill{
+	-webkit-animation: gradient 1.5s ease infinite;
+	-moz-animation: gradient 1.5s ease infinite;
+	animation: gradient 1.5s ease infinite;
+}
+.container-two:hover .fill2{
+	-webkit-animation: gradient 1.5s ease infinite;
+	-moz-animation: gradient 1.5s ease infinite;
+	animation: gradient 1.5s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
